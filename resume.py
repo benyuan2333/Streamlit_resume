@@ -27,14 +27,7 @@ st.set_page_config(
     layout="centered",  
     initial_sidebar_state="auto",
 )
-hide_st_style = """
-            <style>
-            a.viewerBadge_container__r5tak styles_viewerBadge__CvC9N {
-               visibility: hidden !important;
-            }
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 with st.sidebar:
     mention(
         label="我的个人博客",
