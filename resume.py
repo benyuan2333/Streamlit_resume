@@ -80,7 +80,7 @@ st.markdown("""
                 margin-top: 0px; /* 移动设备 */
             }
         }
-    .viewerBadge_container__r5tak {
+     a.viewerBadge_container__r5tak {
            display: none;
         }
     </style>
