@@ -262,7 +262,7 @@ st.download_button(
 )
 def snow():
     rain(
-        emoji="✨",
+        emoji="欢迎✨",
         font_size=20,
         falling_speed=5,
         animation_length=1,
