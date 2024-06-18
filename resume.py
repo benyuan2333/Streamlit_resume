@@ -79,21 +79,6 @@ st.markdown("""
                 margin-top: 0px; /* 移动设备 */
             }
         }
-        a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
-            visibility: hidden;
-        }
-        footer {
-            visibility: hidden;
-        }
-        footer:after {
-            content:''; 
-            visibility: hidden;
-            display: block;
-            position: relative;
-            padding: 0;
-            height: 0;
-            width: 0;
-        }
     </style>
     """, unsafe_allow_html=True)
 
