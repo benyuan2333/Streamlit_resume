@@ -80,7 +80,7 @@ st.markdown("""
             }
         }
         a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
-            visibility: hidden;
+            visibility: hidden !important;
         }
     </style>
     """, unsafe_allow_html=True)
