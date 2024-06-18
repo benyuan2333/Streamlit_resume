@@ -67,10 +67,23 @@ with col1:
         url="https://github.com/benyuan2333",
     )
 
+# 调整头像样式
+st.markdown("""
+    <style>
+        .profile-pic {
+            width: 150px;
+            margin-top: 110px; /* 桌面端 */
+        }
+        @media only screen and (max-width: 768px) {
+            .profile-pic {
+                margin-top: 0px; /* 移动设备 */
+            }
+        }
+    </style>
+    """, unsafe_allow_html=True)
 # 头像
 with col2:
-    st.markdown('<img src="https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg" alt="Rinyom_zhang" width="150" style="margin-top: 110px;">', unsafe_allow_html=True)
-
+    st.markdown('<img src="https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg" alt="Rinyom_zhang" class="profile-pic">', unsafe_allow_html=True)
 
 # 教育背景
 colored_header(
