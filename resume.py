@@ -23,7 +23,7 @@ def stream_gpx(github_url):
 st.set_page_config(
     page_title="个人简历|张际",
     page_icon=":wave:", 
-    layout="wide",  
+    layout="centered",  
     initial_sidebar_state="collapsed",
 )
 
