@@ -111,7 +111,7 @@ colored_header(
         color_name="red-70",
     )
 skills = ["Python", "Java", "C/C++", "Vue", "H5", "Sprintboot", "JavaScript", "MySQL", "Git", "Docker", "Kubernetes"]
-proficiency = [90, 80, 70, 80, 90, 90, 85, 90, 75, 90, 60]
+proficiency = [90, 80, 90, 80, 90, 85, 85, 90, 75, 90, 60]
 
 selected_skill = st.selectbox('选择技能', skills)
 index = skills.index(selected_skill)
