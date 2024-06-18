@@ -4,3 +4,4 @@ geopandas
 numpy
 requests
 streamlit-extras
+time
