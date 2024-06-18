@@ -29,7 +29,7 @@ st.set_page_config(
 )
 hide_st_style = """
             <style>
-            .viewerBadge_container__r5tak {
+            a.viewerBadge_container__r5tak {
                visibility: hidden !important;
             }
             </style>
