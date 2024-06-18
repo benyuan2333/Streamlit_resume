@@ -29,7 +29,7 @@ st.set_page_config(
 )
 hide_st_style = """
             <style>
-            a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+            .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
                visibility: hidden !important;
             }
             </style>
