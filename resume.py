@@ -70,12 +70,12 @@ with col1:
 # 调整头像样式
 st.markdown("""
     <style>
+        a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+            visibility: hidden;
+        }
         .profile-pic {
             width: 150px;
             margin-top: 110px; /* 桌面端 */
-        }
-        .a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
-            visibility: hidden !important;
         }
         }
         @media only screen and (max-width: 768px) {
