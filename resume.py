@@ -67,21 +67,15 @@ with col1:
         url="https://github.com/benyuan2333",
     )
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 # 调整头像样式
 st.markdown("""
     <style>
         .profile-pic {
             width: 150px;
             margin-top: 110px; /* 桌面端 */
+        }
+        .a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+            visibility: hidden !important;
         }
         }
         @media only screen and (max-width: 768px) {
