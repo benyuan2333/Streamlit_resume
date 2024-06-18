@@ -68,14 +68,14 @@ with col1:
 
 # 头像
 with col2:
-    st.header("")  # 空header用于使头像在右侧顶部对齐
-    st.image("https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg", caption="张际", width=150)
+    st.markdown('<img src="https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg" alt="Rinyom_zhang" width="150" style="margin-top: 110px;">', unsafe_allow_html=True)
+
 
 # 教育背景
 colored_header(
         label="教育背景",
         description="",
-        color_name="violet-70",
+        color_name="blue-70",
     )
 st.write("""
 - **武汉科技大学城市学院 - 本科 - 计算机科学与技术**  
@@ -92,7 +92,7 @@ st.write("""
 colored_header(
         label="工作经验",
         description="",
-        color_name="violet-70",
+        color_name="orange-70",
     )
 st.write("""
 - **奇点临近技术（上海）有限公司 - 软件实习**  
