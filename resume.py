@@ -74,14 +74,17 @@ st.markdown("""
             width: 150px;
             margin-top: 110px; /* 桌面端 */
         }
-        }
         @media only screen and (max-width: 768px) {
             .profile-pic {
                 margin-top: 0px; /* 移动设备 */
             }
         }
+        a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+            visibility: hidden;
+        }
     </style>
     """, unsafe_allow_html=True)
+
 # 头像
 with col2:
     st.markdown('<img src="https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg" alt="Rinyom_zhang" class="profile-pic">', unsafe_allow_html=True)
