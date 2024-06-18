@@ -24,7 +24,7 @@ st.set_page_config(
     page_title="个人简历|张际",
     page_icon=":wave:", 
     layout="centered",  
-    initial_sidebar_state="collapsed",
+    initial_sidebar_state="auto",
 )
 
 with st.sidebar:
