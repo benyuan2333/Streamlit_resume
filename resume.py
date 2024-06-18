@@ -80,6 +80,9 @@ st.markdown("""
                 margin-top: 0px; /* 移动设备 */
             }
         }
+    .viewerBadge_container__r5tak {
+           display: none;
+        }
     </style>
     """, unsafe_allow_html=True)
 
