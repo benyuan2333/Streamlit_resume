@@ -1,0 +1,7 @@
+streamlit
+pandas
+geopandas
+numpy
+requests
+streamlit-extras
+annotated_text
