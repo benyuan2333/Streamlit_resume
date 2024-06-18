@@ -226,11 +226,11 @@ colored_header(
     )
 annotated_text("如果您对我的简历感兴趣，请通过", ("邮箱", "benyuanya@gmail.com", "#bff"),"&",("微信", "navoooo", "#afa"), "联系我。")
 
-def snow():
-    rain(
-        emoji="✨",
-        font_size=20,
-        falling_speed=5,
-        animation_length=1,
-    )
-snow()
+# def snow():
+#     rain(
+#         emoji="✨",
+#         font_size=20,
+#         falling_speed=5,
+#         animation_length=1,
+#     )
+# snow()
