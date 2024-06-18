@@ -70,10 +70,6 @@ with col1:
 # 调整头像样式
 st.markdown("""
     <style>
-    #MainMenu {visibility: hidden;}
-    .stDeployButton {display:none;}
-    footer {visibility: hidden;}
-    #stDecoration {display:none;}
         .profile-pic {
             width: 150px;
             margin-top: 110px; /* 桌面端 */
@@ -83,6 +79,9 @@ st.markdown("""
             .profile-pic {
                 margin-top: 0px; /* 移动设备 */
             }
+        }
+            .stDeployButton {
+            visibility: hidden;
         }
     </style>
     """, unsafe_allow_html=True)
