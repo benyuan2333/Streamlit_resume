@@ -66,7 +66,16 @@ with col1:
         icon="github", 
         url="https://github.com/benyuan2333",
     )
-    
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # 调整头像样式
 st.markdown("""
     <style>
