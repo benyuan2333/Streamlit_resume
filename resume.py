@@ -80,7 +80,19 @@ st.markdown("""
             }
         }
         a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
-            visibility: hidden !important;
+            visibility: hidden;
+        }
+        footer {
+            visibility: hidden;
+        }
+        footer:after {
+            content:''; 
+            visibility: hidden;
+            display: block;
+            position: relative;
+            padding: 0;
+            height: 0;
+            width: 0;
         }
     </style>
     """, unsafe_allow_html=True)
