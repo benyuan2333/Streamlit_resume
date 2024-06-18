@@ -23,8 +23,8 @@ def stream_gpx(github_url):
 st.set_page_config(
     page_title="个人简历|张际",
     page_icon=":wave:",
-    layout="wide",  # 使用wide布局
-    initial_sidebar_state="expanded",
+    layout="wide", 
+    initial_sidebar_state="collapsed",
 )
 with st.sidebar:
     mention(
