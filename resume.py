@@ -10,14 +10,7 @@ from streamlit_extras.mention import mention
 from annotated_text import annotated_text
 from streamlit_extras.tags import tagger_component
 from streamlit_extras.let_it_rain import rain
-hide_st_style = """
-            <style>
-            a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
-               visibility: hidden !important;
-            }
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+
 def stream_gpx(github_url):
     # 获取GitHub文件的内容
     response = requests.get(github_url)
@@ -34,7 +27,14 @@ st.set_page_config(
     layout="centered",  
     initial_sidebar_state="auto",
 )
-
+hide_st_style = """
+            <style>
+            a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+               visibility: hidden !important;
+            }
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 with st.sidebar:
     mention(
         label="我的个人博客",
