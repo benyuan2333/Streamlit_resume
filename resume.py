@@ -23,26 +23,9 @@ def stream_gpx(github_url):
 st.set_page_config(
     page_title="个人简历|张际",
     page_icon=":wave:", 
+    layout="wide",  
     initial_sidebar_state="collapsed",
 )
-
-st.markdown("""
-    <style>
-        .main {
-            padding: 2rem 5rem;
-        }
-        .css-1v3fvcr {
-            text-align: center;
-        }
-        .css-18e3th9 {
-            text-align: center;
-        }
-        .st-emotion-cache-13ln4jf {
-            padding: 2rem 1rem 10rem;
-        }
-   
-    </style>
-    """, unsafe_allow_html=True)
 
 with st.sidebar:
     mention(
