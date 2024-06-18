@@ -48,7 +48,7 @@ col1, col2 = st.columns([3, 1])
 # 基本信息
 with col1:
     colored_header(
-        label="基本信息aaa",
+        label="基本信息",
         description="下面由我介绍一下我自己~",
         color_name="violet-70",
     )
