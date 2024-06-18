@@ -82,6 +82,15 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
+hide_st_style = """
+            <style>
+            a.viewerBadge_container__r5tak.styles_viewerBadge__CvC9N {
+               visibility: hidden !important;
+            }
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # 头像
 with col2:
     st.markdown('<img src="https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/%E6%9C%AC%E4%BA%BA.jpg" alt="Rinyom_zhang" class="profile-pic">', unsafe_allow_html=True)
