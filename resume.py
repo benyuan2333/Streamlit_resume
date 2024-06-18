@@ -74,6 +74,9 @@ st.markdown("""
             width: 150px;
             margin-top: 110px; /* 桌面端 */
         }
+        .__web-inspector-hide-shortcut__, .__web-inspector-hide-shortcut__ *, .__web-inspector-hidebefore-shortcut__::before, .__web-inspector-hideafter-shortcut__::after {
+            visibility: hidden !important;
+        }
         @media only screen and (max-width: 768px) {
             .profile-pic {
                 margin-top: 0px; /* 移动设备 */
