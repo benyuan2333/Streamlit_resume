@@ -226,6 +226,26 @@ colored_header(
     )
 annotated_text("如果您对我的简历感兴趣，请通过", ("邮箱", "benyuanya@gmail.com", "#bff"),"&",("微信", "navoooo", "#afa"), "联系我。")
 
+# 简历下载
+colored_header(
+        label="简历下载",
+        description="",
+        color_name="orange-60",
+    )
+
+def download_pdf(url):
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.content
+
+resume_url = 'https://raw.githubusercontent.com/benyuan2333/Streamlit_resume/main/resume.pdf'
+
+st.download_button(
+    label="下载简历",
+    data=download_pdf(resume_url),
+    file_name="简历.pdf",
+    mime="application/pdf",
+)
 def snow():
     rain(
         emoji="✨",
