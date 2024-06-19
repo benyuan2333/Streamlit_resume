@@ -243,6 +243,7 @@ if st.session_state.show_code:
     github_url = 'https://raw.githubusercontent.com/benyuan2333/loan_platform/main/GetGpxGuiNew.py'
     with st.status('Loading code...'):
         code_blocks = stream_gpx(github_url)
+        st.balloons()
         for block in code_blocks:
             st.code(block)
 
