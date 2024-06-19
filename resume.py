@@ -242,7 +242,7 @@ if st.button("路书相关爬虫代码展示"):
 if st.session_state.show_code:
     github_url = 'https://raw.githubusercontent.com/benyuan2333/loan_platform/main/GetGpxGuiNew.py'
     with st.spinner('Loading code...'):
-        st.balloons
+        st.balloons()
         code_blocks = stream_gpx(github_url)
         for block in code_blocks:
             st.code(block)
