@@ -236,12 +236,12 @@ if 'show_code' not in st.session_state:
 
 # 按钮点击事件
 if st.button("路书相关爬虫代码展示"):
-        st.session_state.show_code = not st.session_state.show_code
+    st.session_state.show_code = not st.session_state.show_code
 
 # 显示或隐藏代码块
 if st.session_state.show_code:
     github_url = 'https://raw.githubusercontent.com/benyuan2333/loan_platform/main/GetGpxGuiNew.py'
-    with st.spinner('Loading code...'):
+    with st.status('Loading code...'):
         code_blocks = stream_gpx(github_url)
         for block in code_blocks:
             st.code(block)
