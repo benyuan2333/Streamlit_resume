@@ -36,15 +36,15 @@ def sidebar_bg(image_url):
         [data-testid="stSidebar"] > div:first-child {{
             background: url({image_url}) no-repeat right bottom;
             background-size: contain;
-            background-position-y: 113%; 
+            background-position-y: 115%; 
         }}
         </style>
         """,
         unsafe_allow_html=True,
     )
 
-oss_image_url = "https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/qwq.png"
-sidebar_bg(oss_image_url)
+sidebarbg_url = "https://benyuan-house.oss-cn-shanghai.aliyuncs.com/1/qwq.png"
+sidebar_bg(sidebarbg_url)
 
 with st.sidebar:
     mention(
