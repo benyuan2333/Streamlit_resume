@@ -28,6 +28,16 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
+# 飘落效果
+def snow():
+    rain(
+        emoji="欢迎✨",
+        font_size=20,
+        falling_speed=5,
+        animation_length=1,
+    )
+snow()
+
 # 侧边栏背景
 def sidebar_bg(image_url):
     st.markdown(
@@ -230,22 +240,25 @@ with col6:
     - 实现HMAC解密验证API请求的功能，确保数据安全和完整性
     """)
 
-# 设定按钮的初始状态
+# 代码演示
 if 'show_code' not in st.session_state:
     st.session_state.show_code = False
 
-# 按钮点击事件
-if st.button("路书相关爬虫代码展示"):
+if st.button("路书代码演示"):
     st.session_state.show_code = not st.session_state.show_code
 
-# 显示或隐藏代码块
 if st.session_state.show_code:
     github_url = 'https://raw.githubusercontent.com/benyuan2333/loan_platform/main/GetGpxGuiNew.py'
-    with st.spinner('Loading code...'):
-        st.balloons()
-        code_blocks = stream_gpx(github_url)
-        for block in code_blocks:
-            st.code(block)
+    progress_text = "代码加载中......(👉ﾟヮﾟ)👉"
+    my_bar = st.progress(0, text=progress_text)
+
+    for percent_complete in range(100):
+        time.sleep(0.01)
+        my_bar.progress(percent_complete + 1, text=progress_text)
+    st.balloons()
+    code_blocks = stream_gpx(github_url)
+    for block in code_blocks:
+        st.code(block)
 
 # 其他信息
 colored_header(
@@ -283,11 +296,3 @@ st.download_button(
     file_name="简历.pdf",
     mime="application/pdf",
 )
-def snow():
-    rain(
-        emoji="欢迎✨",
-        font_size=20,
-        falling_speed=5,
-        animation_length=1,
-    )
-snow()
