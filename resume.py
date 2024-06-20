@@ -12,7 +12,6 @@ from streamlit_extras.tags import tagger_component
 from streamlit_extras.let_it_rain import rain
 
 def stream_gpx(github_url):
-    # 获取GitHub文件的内容
     response = requests.get(github_url)
     response.raise_for_status()  
     
@@ -31,7 +30,7 @@ st.set_page_config(
 # 飘落效果
 def snow():
     rain(
-        emoji="欢迎✨",
+        emoji="/ᐠ - ˕ -マ Ⳋ✌️",
         font_size=20,
         falling_speed=5,
         animation_length=1,
